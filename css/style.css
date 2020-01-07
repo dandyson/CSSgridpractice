@@ -1,0 +1,98 @@
+body {
+    margin: auto 0;
+}
+
+.section {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+/*NAV*/
+.navbar {
+    background-color: rgb(55, 128, 238);
+}
+
+.mainNav {
+    display: flex;
+    list-style: none;
+    font-size: 0.7em;
+    margin: 0;
+}
+
+li {
+    padding: 20px;
+}
+
+a {
+    color: #f5f5f6;
+    text-decoration: none;
+}
+
+.push {
+    margin-left: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .mainNav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+
+/*COVER*/
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150vh;
+    background-image: url("../img/laptop2.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.cover h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    margin: -500px 0 0 0;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+.cover h1:hover {
+    -webkit-transform: scale(1.3);
+    cursor: pointer;
+}
+
+
+/*GRID*/
+
+.grid-wrapper {
+    margin: 10px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.box > img {
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.box > img:hover {
+    -webkit-transform: scale(1.1);
+    cursor: pointer;
+}
+
+.projectGrid {
+    background-color: purple;
+}
+
+.footer {
+    text-align: center;
+    background-color: yellow;
+}
